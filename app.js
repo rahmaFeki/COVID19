@@ -64,7 +64,7 @@ app.get("/records",function(req,res){
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
   var dbo = db.db("patientCOVID");
-  dbo.collection("patient").find({}).toArray(function(err, result) {
+  dbo.collection("patient").find({}).sort({priorite:1}).toArray(function(err, result) {
 	  res.send(result);
     if (err) throw err;
     console.log(result);
