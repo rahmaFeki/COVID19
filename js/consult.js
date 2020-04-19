@@ -28,7 +28,7 @@ var table = document.getElementById('myTable');
                 document.getElementById('myTable').innerHTML = tr;
 				     },
         error: function(xhr, status, error) {
-            alert(xhr.status);
+           
         }
     });
 				}
@@ -54,7 +54,7 @@ var table = document.getElementById('myTable');
                 }
 								     },
         error: function(xhr, status, error) {
-            alert(xhr.status);
+         
         }
     });
 				}
